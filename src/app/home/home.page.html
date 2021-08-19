@@ -1,0 +1,64 @@
+<ion-header>
+  <ion-toolbar color="primary">
+      <ion-title>Home | Healthy Woman</ion-title>
+      <!-- Menu Icon -->
+      <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+      </ion-buttons>
+  
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <!--Grid Menu-->>
+  
+  <ion-card>
+    <ion-grid>
+        <ion-row class="ion-text-center">
+            <ion-col size="4" routerLink="/cycle">
+                <ion-icon name="body" color="danger" size="large"></ion-icon>
+                <p>Menstrual Cycle</p>
+            </ion-col>
+            <ion-col size="4" routerLink="/ovulation">
+                <ion-icon name="bag-add" color="tertiary" size="large"></ion-icon>
+                <p>Ovulation</p>
+            </ion-col>
+            <ion-col size="4" routerLink="/safe-period">
+                <ion-icon name="keypad" color="danger" size="large"></ion-icon>
+                <p>Safe Period</p>
+            </ion-col>
+        </ion-row>
+        <!--Horizontal Line-->
+        <div style="width: 100%; border-top: 1px solid #d4d4d4; margin: 8px 0;"></div>
+
+        <ion-row class="ion-text-center">
+          <ion-col size="4" routerLink="/pregnancy"><!--Here you'll be redirected to open the pregnancy page once you click on the icon-->
+              <ion-icon name="fitness" color="danger" size="large"></ion-icon>
+              <p>Pregnancy</p>
+          </ion-col>
+          <ion-col size="4" routerLink="/infertility">
+              <ion-icon name="expand" color="danger" size="large"></ion-icon>
+              <p>Infertility</p>
+          </ion-col>
+          <ion-col size="4" routerLink="/contact">
+              <ion-icon name="chatbox" color="orange" size="large"></ion-icon>
+              <p>COVID-19</p>
+          </ion-col>
+      </ion-row>
+    </ion-grid>
+</ion-card>
+
+<!--Section Two-->
+<ion-card style="box-shadow: none;"><!--This here removes the outer side of the box-->  
+  <ion-card-header>
+    <ion-card-title>Menstrual Cycle</ion-card-title>
+    <ion-card-subtitle>Understanding your menstrual cycle</ion-card-subtitle>
+  </ion-card-header>
+
+  <ion-card-content>
+    <ion-img src="/assets/images/woman.jpg"></ion-img> 
+    <a href="https://www.afro.who.int/health-topics/sexual-and-reproductive-health">Learn More</a>
+  <!--This link will take you to learn more -->
+  </ion-card-content>
+</ion-card>
+</ion-content>
